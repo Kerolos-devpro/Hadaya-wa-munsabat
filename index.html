@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="مناسبات و هدايا - هدايا يدوية وزهور طازجة لكل مناسبة"
+    />
+    <title>مناسبات و هدايا</title>
+
+    <!-- Bootstrap 5 RTL -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+    />
+
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#"> 🌸 مناسبات <span>و هدايا</span> </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="القائمة"
+          style="box-shadow: none"
+        >
+          <span style="font-size: 1.5rem; color: var(--rose-dark)">☰</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav me-auto gap-1">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero" onclick="scrollToSection('hero')"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#products"
+                onclick="scrollToSection('products')"
+                >المنتجات</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#how-it-works"
+                onclick="scrollToSection('how-it-works')"
+                >كيف نعمل</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#gallery"
+                onclick="scrollToSection('gallery')"
+                >معرض الصور</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#reviews"
+                onclick="scrollToSection('reviews')"
+                >آراء العملاء</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq" onclick="scrollToSection('faq')"
+                >الأسئلة الشائعة</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#order"
+                onclick="scrollToSection('order')"
+                >اطلب الآن</a
+              >
+            </li>
+          </ul>
+          <a
+            href="#order"
+            class="btn-primary-custom ms-2"
+            style="padding: 9px 24px; font-size: 0.9rem"
+            onclick="
+              event.preventDefault();
+              scrollToSection('order');
+            "
+            >اطلبي الآن 💕</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-blob"></div>
+      <div class="hero-blob-2"></div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Text Content -->
+          <div class="col-lg-6 hero-content">
+            <div class="hero-badge">✨ هدايا يدوية حصرية</div>
+            <h1 class="hero-title">
+              اجعلي كل لحظة<br />
+              <span class="highlight">لا تُنسى</span>
+            </h1>
+            <p class="hero-desc">
+              نصنع لكِ أجمل الهدايا وباقات الورود الطازجة المصنوعة بحب واهتمام
+              لتُضفي على مناسباتكِ الخاصة بهجةً وجمالاً يدوم في القلب.
+            </p>
+            <div class="d-flex flex-wrap align-items-center gap-3">
+              <a
+                href="#order"
+                class="btn-primary-custom"
+                onclick="
+                  event.preventDefault();
+                  scrollToSection('order');
+                "
+                >اطلبي الآن 🛒</a
+              >
+              <a
+                href="#products"
+                class="btn-secondary-custom"
+                onclick="
+                  event.preventDefault();
+                  scrollToSection('products');
+                "
+                >تصفّحي المنتجات</a
+              >
+            </div>
+
+            <!-- Stats -->
+            <div class="d-flex gap-4 mt-5 flex-wrap">
+              <div>
+                <div
+                  style="
+                    font-size: 1.6rem;
+                    font-weight: 800;
+                    color: var(--rose-dark);
+                  "
+                >
+                  +٥٠٠
+                </div>
+                <div
+                  style="
+                    font-size: 0.82rem;
+                    color: var(--rose-muted);
+                    font-weight: 600;
+                  "
+                >
+                  طلب سعيد
+                </div>
+              </div>
+              <div
+                style="
+                  border-right: 2px solid var(--rose-light);
+                  padding-right: 20px;
+                  margin-right: 4px;
+                "
+              ></div>
+              <div>
+                <div
+                  style="
+                    font-size: 1.6rem;
+                    font-weight: 800;
+                    color: var(--rose-dark);
+                  "
+                >
+                  ١٠٠٪
+                </div>
+                <div
+                  style="
+                    font-size: 0.82rem;
+                    color: var(--rose-muted);
+                    font-weight: 600;
+                  "
+                >
+                  صنع يدوي
+                </div>
+              </div>
+              <div
+                style="
+                  border-right: 2px solid var(--rose-light);
+                  padding-right: 20px;
+                  margin-right: 4px;
+                "
+              ></div>
+              <div>
+                <div
+                  style="
+                    font-size: 1.6rem;
+                    font-weight: 800;
+                    color: var(--rose-dark);
+                  "
+                >
+                  ⭐ ٤.٩
+                </div>
+                <div
+                  style="
+                    font-size: 0.82rem;
+                    color: var(--rose-muted);
+                    font-weight: 600;
+                  "
+                >
+                  تقييم العملاء
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Image -->
+          <div class="col-lg-6 hero-image-wrapper">
+            <div class="hero-image-frame">
+              <img
+                src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?w=800&q=85&auto=format&fit=crop"
+                alt="زهور جميلة"
+              />
+            </div>
+            <div class="hero-decoration hero-decoration-1">🌹</div>
+            <div class="hero-decoration hero-decoration-2">🎀</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCTS SECTION ============ -->
+    <section class="products-section" id="products">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">🎁 تشكيلتنا</span>
+          <h2 class="section-title">هداياي المميزة</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            اكتشفي تشكيلتنا الفاخرة من الهدايا اليدوية وباقات الورود المصنوعة
+            بأرقى الخامات وبلمسة حب حقيقية.
+          </p>
+        </div>
+
+        <div class="row" id="products-grid">
+          <!-- يتم تحميل المنتجات عبر JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY / NECKLACE ============ -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">💍 تشكيلة الإكسسوارات</span>
+          <h2 class="section-title">عقود وإكسسوارات</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            اختاري قطعتكِ المفضلة — يمكنكِ اختيار أكثر من قطعة معاً
+          </p>
+        </div>
+
+        <!-- Multi-select notice -->
+        <div class="gallery-multiselect-notice fade-in">
+          <span
+            >💡 اضغطي على أي قطعة لاختيارها — يمكن اختيار أكثر من واحدة</span
+          >
+          <span class="selected-count" id="selected-count" style="display: none"
+            >✅ تم اختيار <strong id="selected-num">0</strong> قطع</span
+          >
+        </div>
+
+        <div class="gallery-grid fade-in" id="necklace-grid">
+          <div
+            class="gallery-item necklace-item"
+            data-name="عقد لؤلؤ أنيق"
+            onclick="toggleNecklace(this)"
+          >
+            <img src="images/client1.jpg" alt="عقد لؤلؤ" />
+            <div class="gallery-overlay">
+              <span>عقد لؤلؤ أنيق بلمسة ناعمة ✨</span>
+            </div>
+            <div class="necklace-check">✓</div>
+          </div>
+          <div
+            class="gallery-item necklace-item"
+            data-name="أساور لؤلؤ كلاسيكية"
+            onclick="toggleNecklace(this)"
+          >
+            <img src="images/client2.jpg" alt="أساور لؤلؤ" />
+            <div class="gallery-overlay">
+              <span>أساور لؤلؤ كلاسيكية 💫</span>
+            </div>
+            <div class="necklace-check">✓</div>
+          </div>
+          <div
+            class="gallery-item necklace-item"
+            data-name="سلسلة مزدوجة راقية"
+            onclick="toggleNecklace(this)"
+          >
+            <img src="images/client3.jpg" alt="سلسلة مزدوجة" />
+            <div class="gallery-overlay">
+              <span>سلسلة مزدوجة بإطلالة راقية 🤍</span>
+            </div>
+            <div class="necklace-check">✓</div>
+          </div>
+          <div
+            class="gallery-item necklace-item"
+            data-name="عقد قلب رومانسي"
+            onclick="toggleNecklace(this)"
+          >
+            <img src="images/c4.jpg" alt="عقد قلب" />
+            <div class="gallery-overlay">
+              <span>عقد قلب بتفاصيل رومانسية 💖</span>
+            </div>
+            <div class="necklace-check">✓</div>
+          </div>
+          <div
+            class="gallery-item necklace-item"
+            data-name="طقم لؤلؤ بسيط"
+            onclick="toggleNecklace(this)"
+          >
+            <img src="images/c5.jpg" alt="طقم لؤلؤ" />
+            <div class="gallery-overlay">
+              <span>طقم لؤلؤ بسيط وأنيق 🌸</span>
+            </div>
+            <div class="necklace-check">✓</div>
+          </div>
+          <div
+            class="gallery-item necklace-item"
+            data-name="تصميم ناعم للمناسبات"
+            onclick="toggleNecklace(this)"
+          >
+            <img src="images/c6.jpg" alt="تصميم ناعم" />
+            <div class="gallery-overlay">
+              <span>تصميم ناعم يناسب كل مناسبة ✨</span>
+            </div>
+            <div class="necklace-check">✓</div>
+          </div>
+          <div
+            class="gallery-item necklace-item"
+            data-name="عقد لؤلؤ فخم"
+            onclick="toggleNecklace(this)"
+          >
+            <img src="images/c7.jpg" alt="عقد فاخر" />
+            <div class="gallery-overlay">
+              <span>عقد لؤلؤ بلمسة فخمة 💎</span>
+            </div>
+            <div class="necklace-check">✓</div>
+          </div>
+          <div
+            class="gallery-item necklace-item"
+            data-name="إكسسوارات أنثوية راقية"
+            onclick="toggleNecklace(this)"
+          >
+            <img src="images/neck17.jpg" alt="إكسسوارات أنثوية" />
+            <div class="gallery-overlay">
+              <span>إكسسوارات أنثوية راقية 🤍</span>
+            </div>
+            <div class="necklace-check">✓</div>
+          </div>
+        </div>
+
+        <!-- Order selected button -->
+        <div
+          class="gallery-order-bar fade-in"
+          id="gallery-order-bar"
+          style="display: none"
+        >
+          <span id="gallery-selected-summary">لم يتم اختيار أي قطعة</span>
+          <button class="gallery-order-btn" onclick="orderSelectedNecklaces()">
+            📲 اطلبي المختار عبر واتساب
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="how-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">🎀 خطواتنا</span>
+          <h2 class="section-title">كيف نعمل؟</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            أربع خطوات بسيطة تفصلكِ عن هديتكِ المثالية
+          </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-sm-6 col-lg-3 fade-in">
+            <div class="how-card">
+              <div class="how-number">١</div>
+              <div class="how-icon">🛍️</div>
+              <h5>اختاري هديتكِ</h5>
+              <p>
+                تصفّحي تشكيلتنا واختاري الهدية أو الباقة التي تناسب مناسبتكِ
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 fade-in">
+            <div class="how-card">
+              <div class="how-number">٢</div>
+              <div class="how-icon">📝</div>
+              <h5>أرسلي الطلب</h5>
+              <p>أكملي نموذج الطلب ببياناتكِ وسنتلقى طلبكِ فوراً عبر واتساب</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 fade-in">
+            <div class="how-card">
+              <div class="how-number">٣</div>
+              <div class="how-icon">🌸</div>
+              <h5>نُحضّر هديتكِ</h5>
+              <p>
+                نصنع هديتكِ يدوياً بكل عناية واهتمام مع تغليف فاخر يليق
+                بالمناسبة
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 fade-in">
+            <div class="how-card">
+              <div class="how-number">٤</div>
+              <div class="how-icon">🚀</div>
+              <h5>نوصّلها إليكِ</h5>
+              <p>نوصّل هديتكِ بأمان وسرعة مع ضمان وصولها طازجة وجميلة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">⭐ العملاء</span>
+          <h2 class="section-title">ماذا قالوا عنّا؟</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            آراء حقيقية من عميلاتنا الكريمات اللواتي وثقن بنا
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 fade-in">
+            <div class="review-card">
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">
+                "باقة الورد وصلت وكأنها قطعة فنية! التغليف كان راقياً جداً
+                والورود طازجة لدرجة ما صدّقت. شكراً مناسبات و هدايا 🌹"
+              </p>
+              <div class="review-author">
+                <div class="review-avatar">س</div>
+                <div>
+                  <strong>سارة الأحمدي</strong>
+                  <span>الرياض</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-in">
+            <div class="review-card">
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">
+                "أهدت صديقتي هدية من عندهم في عيد ميلادي وانبهرت! الصندوق كان
+                مرتّب بشكل ما توقعته. بالتأكيد سأطلب منهم مرة ثانية 💕"
+              </p>
+              <div class="review-author">
+                <div class="review-avatar">ن</div>
+                <div>
+                  <strong>نورة العتيبي</strong>
+                  <span>جدة</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-in">
+            <div class="review-card">
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">
+                "تعاملت معهم لمناسبة خطوبة وكانت التجربة ممتازة من البداية
+                للنهاية. التواصل سريع والتوصيل في الموعد. أنصح الكل فيهم!"
+              </p>
+              <div class="review-author">
+                <div class="review-avatar">م</div>
+                <div>
+                  <strong>منيرة الزهراني</strong>
+                  <span>الدمام</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-in">
+            <div class="review-card">
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">
+                "أجمل ورود اشتريتها في حياتي! استمرت أسبوعين كاملين وكانت مرتّبة
+                بشكل احترافي. سعر معقول مقابل الجودة العالية 🌷"
+              </p>
+              <div class="review-author">
+                <div class="review-avatar">ر</div>
+                <div>
+                  <strong>ريم الشمري</strong>
+                  <span>مكة</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-in">
+            <div class="review-card">
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">
+                "طلبت ورود لأمي في عيد الأم والله فرحت فرحة ما توصف. قالت إنها
+                أحلى باقة شافتها. شكراً على اللمسة الخاصة في البطاقة 💐"
+              </p>
+              <div class="review-author">
+                <div class="review-avatar">ه</div>
+                <div>
+                  <strong>هند القحطاني</strong>
+                  <span>الطائف</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-in">
+            <div class="review-card review-card-featured">
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">
+                "من أفضل المتاجر اللي تعاملت معها! الاهتمام بالتفاصيل واضح في كل
+                شيء. هديتي وصلت بشكل يفوق التوقعات ✨"
+              </p>
+              <div class="review-author">
+                <div class="review-avatar">ل</div>
+                <div>
+                  <strong>لجين الدوسري</strong>
+                  <span>أبها</span>
+                </div>
+              </div>
+              <div class="review-verified">✅ عميلة موثّقة</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">❓ الأسئلة</span>
+          <h2 class="section-title">أسئلة شائعة</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            إجابات على أكثر الأسئلة التي تسألنا عنها
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 fade-in">
+            <div class="accordion" id="faqAccordion">
+              <div class="faq-item">
+                <button
+                  class="faq-question"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq1"
+                  aria-expanded="true"
+                >
+                  <span>كم يستغرق تحضير الطلب وتوصيله؟</span>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div
+                  id="faq1"
+                  class="collapse show"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="faq-answer">
+                    يستغرق تحضير الطلب من ساعة إلى ٣ ساعات حسب نوع الهدية.
+                    التوصيل يتم في نفس اليوم داخل المدينة إذا تم الطلب قبل
+                    الساعة ٣ مساءً. يمكنكِ أيضاً تحديد وقت التوصيل المناسب لكِ
+                    عند التواصل معنا.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button
+                  class="faq-question collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq2"
+                >
+                  <span>هل يمكنني تخصيص الهدية برسالة أو اسم؟</span>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div id="faq2" class="collapse" data-bs-parent="#faqAccordion">
+                  <div class="faq-answer">
+                    بالتأكيد! نوفر بطاقة مكتوبة بخط يد جميل مجاناً مع كل طلب.
+                    يمكنكِ كتابة رسالتكِ الخاصة في خانة الملاحظات عند الطلب
+                    وسنحرص على تضمينها بشكل أنيق.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button
+                  class="faq-question collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq3"
+                >
+                  <span>ما هي مناطق التوصيل المتاحة؟</span>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div id="faq3" class="collapse" data-bs-parent="#faqAccordion">
+                  <div class="faq-answer">
+                    نوصّل حالياً لجميع أحياء المدينة الرئيسية. للمناطق الأخرى
+                    يمكن الترتيب عبر شركات الشحن مع الحفاظ على جودة المنتج.
+                    تواصلي معنا لمعرفة تفاصيل التوصيل لمنطقتكِ.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button
+                  class="faq-question collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq4"
+                >
+                  <span>هل الزهور طازجة أم مجففة؟</span>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div id="faq4" class="collapse" data-bs-parent="#faqAccordion">
+                  <div class="faq-answer">
+                    نوفر النوعين! لدينا ورود طازجة تدوم من أسبوع إلى أسبوعين،
+                    وورود محفوظة (إيتيرنيتي) تدوم أكثر من سنة. يمكنكِ اختيار ما
+                    يناسبكِ عند إكمال الطلب.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button
+                  class="faq-question collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq5"
+                >
+                  <span>كيف أدفع ثمن الطلب؟</span>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div id="faq5" class="collapse" data-bs-parent="#faqAccordion">
+                  <div class="faq-answer">
+                    نقبل الدفع عبر تحويل بنكي، مدى، أو الدفع عند الاستلام. سيتم
+                    تأكيد طريقة الدفع المناسبة عند التواصل معكِ عبر واتساب بعد
+                    إرسال الطلب.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button
+                  class="faq-question collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq6"
+                >
+                  <span>هل يمكن الطلب بكميات كبيرة للمناسبات؟</span>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div id="faq6" class="collapse" data-bs-parent="#faqAccordion">
+                  <div class="faq-answer">
+                    نعم! نوفر خدمة الطلبات الجماعية للأفراح والمناسبات الكبيرة
+                    بأسعار خاصة. تواصلي معنا مبكراً لضمان الجاهزية وتحديد
+                    التصاميم المناسبة لمناسبتكِ.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ORDER SECTION ============ -->
+    <section class="order-section" id="order">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">📦 اطلبي الآن</span>
+          <h2 class="section-title">أكملي طلبكِ</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            أكملي بياناتكِ وسنتواصل معكِ عبر واتساب لتأكيد الطلب في أقرب وقت.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Info Card -->
+          <div class="col-lg-4 fade-in">
+            <div class="order-info-card">
+              <h4>لماذا مناسبات و هدايا؟ 🌸</h4>
+
+              <div class="info-item">
+                <div class="info-icon">🌹</div>
+                <div class="info-text">
+                  <strong>زهور طازجة يومياً</strong>
+                  <span
+                    >نستقبل زهورنا يومياً لضمان أعلى جودة وأطول فترة للتمتع
+                    بها.</span
+                  >
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">🎀</div>
+                <div class="info-text">
+                  <strong>تغليف أنيق مجاني</strong>
+                  <span
+                    >كل طلب يصلكِ في تغليف فاخر يليق بالمناسبة ويسعد المُهدى
+                    إليها.</span
+                  >
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">🚀</div>
+                <div class="info-text">
+                  <strong>توصيل سريع</strong>
+                  <span
+                    >نوصّل طلبكِ بعناية فائقة في أقرب وقت ممكن مع ضمان الحفاظ
+                    على الجودة.</span
+                  >
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">💬</div>
+                <div class="info-text">
+                  <strong>خدمة شخصية عبر واتساب</strong>
+                  <span
+                    >نتابع معكِ كل تفاصيل الطلب مباشرة عبر الواتساب بكل
+                    سهولة.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Order Form -->
+          <div class="col-lg-7 fade-in">
+            <div class="order-card">
+              <form id="order-form" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="order-name"
+                      >الاسم الكريم *</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="order-name"
+                      placeholder="أدخلي اسمكِ الكريم"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label" for="order-phone"
+                      >رقم الهاتف *</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="order-phone"
+                      placeholder="05xxxxxxxx"
+                      dir="ltr"
+                      style="text-align: right"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label" for="order-product"
+                      >اختاري المنتج *</label
+                    >
+                    <select class="form-select" id="order-product" required>
+                      <option value="">-- اختاري الهدية المناسبة --</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label" for="order-note"
+                      >ملاحظة (اختياري)</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="order-note"
+                      placeholder="أي تفاصيل إضافية، مثل: مناسبة التهنئة، لون مفضّل، تخصيص البطاقة..."
+                    ></textarea>
+                  </div>
+
+                  <div class="col-12">
+                    <button type="submit" class="btn-order">
+                      📲 أرسلي الطلب عبر واتساب
+                    </button>
+                    <p
+                      style="
+                        text-align: center;
+                        margin-top: 12px;
+                        font-size: 0.82rem;
+                        color: var(--rose-muted);
+                      "
+                    >
+                      سيتم تحويلكِ مباشرةً إلى واتساب لتأكيد الطلب 💕
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-md-5">
+            <div class="footer-brand">🌸 مناسبات و هدايا</div>
+            <p class="footer-tagline">
+              نصنع الفرحة ونُهدي السعادة في كل مناسبة ✨
+            </p>
+            <a
+              href="https://wa.me/201125020599"
+              target="_blank"
+              class="footer-wa"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              تواصلي معنا عبر واتساب
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <h6
+              style="
+                color: var(--rose-light);
+                font-weight: 700;
+                margin-bottom: 16px;
+              "
+            >
+              روابط سريعة
+            </h6>
+            <div class="footer-links flex-column">
+              <a
+                href="#hero"
+                class="footer-link"
+                onclick="
+                  event.preventDefault();
+                  scrollToSection('hero');
+                "
+                >الرئيسية</a
+              >
+              <a
+                href="#products"
+                class="footer-link"
+                onclick="
+                  event.preventDefault();
+                  scrollToSection('products');
+                "
+                >المنتجات</a
+              >
+              <a
+                href="#order"
+                class="footer-link"
+                onclick="
+                  event.preventDefault();
+                  scrollToSection('order');
+                "
+                >اطلبي الآن</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <h6
+              style="
+                color: var(--rose-light);
+                font-weight: 700;
+                margin-bottom: 16px;
+              "
+            >
+              تواصلي معنا
+            </h6>
+            <p
+              style="
+                font-size: 0.88rem;
+                color: rgba(251, 228, 230, 0.6);
+                line-height: 1.8;
+              "
+            >
+              نحن هنا لنجعل مناسباتكِ أكثر بهجةً وجمالاً.<br />
+              لا تترددي في التواصل معنا في أي وقت 💕
+            </p>
+            <div style="margin-top: 14px">
+              <span style="font-size: 0.85rem; color: var(--rose-medium)"
+                >📞 واتساب:</span
+              >
+              <span
+                style="
+                  font-size: 0.88rem;
+                  color: rgba(251, 228, 230, 0.8);
+                  margin-right: 6px;
+                "
+                dir="ltr"
+                >+20 112 502 0599</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <p class="footer-copyright">
+          © ٢٠٢٥ مناسبات و هدايا — جميع الحقوق محفوظة 🌸 صُنع بحب وعناية
+        </p>
+      </div>
+    </footer>
+
+    <!-- ============ FLOATING WHATSAPP ============ -->
+    <a class="float-wa" onclick="openFloatingWA()" href="#" aria-label="واتساب">
+      <span class="float-wa-label">تحدثي معنا 💬</span>
+      <div class="float-wa-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+          />
+        </svg>
+      </div>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
